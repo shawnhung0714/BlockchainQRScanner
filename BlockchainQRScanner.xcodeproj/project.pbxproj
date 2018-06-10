@@ -12,6 +12,16 @@
 		4CA33E1E20CD1D53000E2C34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA33E1C20CD1D53000E2C34 /* Main.storyboard */; };
 		4CA33E2020CD1D54000E2C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA33E1F20CD1D54000E2C34 /* Assets.xcassets */; };
 		4CA33E2320CD1D54000E2C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA33E2120CD1D54000E2C34 /* LaunchScreen.storyboard */; };
+		4CA33E3520CD2586000E2C34 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E2B20CD2586000E2C34 /* QRCodeReader.swift */; };
+		4CA33E3620CD2586000E2C34 /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E2C20CD2586000E2C34 /* QRCodeReaderViewControllerDelegate.swift */; };
+		4CA33E3720CD2586000E2C34 /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E2D20CD2586000E2C34 /* QRCodeReaderViewContainer.swift */; };
+		4CA33E3820CD2586000E2C34 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E2E20CD2586000E2C34 /* QRCodeReaderViewControllerBuilder.swift */; };
+		4CA33E3920CD2586000E2C34 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E2F20CD2586000E2C34 /* QRCodeReaderView.swift */; };
+		4CA33E3A20CD2586000E2C34 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E3020CD2586000E2C34 /* QRCodeReaderResult.swift */; };
+		4CA33E3B20CD2586000E2C34 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E3120CD2586000E2C34 /* SwitchCameraButton.swift */; };
+		4CA33E3C20CD2586000E2C34 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E3220CD2586000E2C34 /* QRCodeReaderViewController.swift */; };
+		4CA33E3D20CD2586000E2C34 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E3320CD2586000E2C34 /* ToggleTorchButton.swift */; };
+		4CA33E3E20CD2586000E2C34 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E3420CD2586000E2C34 /* ReaderOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		4CA33E1F20CD1D54000E2C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA33E2220CD1D54000E2C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA33E2420CD1D54000E2C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA33E2B20CD2586000E2C34 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		4CA33E2C20CD2586000E2C34 /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		4CA33E2D20CD2586000E2C34 /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
+		4CA33E2E20CD2586000E2C34 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
+		4CA33E2F20CD2586000E2C34 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		4CA33E3020CD2586000E2C34 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		4CA33E3120CD2586000E2C34 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		4CA33E3220CD2586000E2C34 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		4CA33E3320CD2586000E2C34 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		4CA33E3420CD2586000E2C34 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +58,7 @@
 		4CA33E0C20CD1D53000E2C34 = {
 			isa = PBXGroup;
 			children = (
+				4CA33E2A20CD2586000E2C34 /* libQRCodeReader */,
 				4CA33E1720CD1D53000E2C34 /* BlockchainQRScanner */,
 				4CA33E1620CD1D53000E2C34 /* Products */,
 			);
@@ -62,6 +83,24 @@
 				4CA33E2420CD1D54000E2C34 /* Info.plist */,
 			);
 			path = BlockchainQRScanner;
+			sourceTree = "<group>";
+		};
+		4CA33E2A20CD2586000E2C34 /* libQRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				4CA33E2B20CD2586000E2C34 /* QRCodeReader.swift */,
+				4CA33E2C20CD2586000E2C34 /* QRCodeReaderViewControllerDelegate.swift */,
+				4CA33E2D20CD2586000E2C34 /* QRCodeReaderViewContainer.swift */,
+				4CA33E2E20CD2586000E2C34 /* QRCodeReaderViewControllerBuilder.swift */,
+				4CA33E2F20CD2586000E2C34 /* QRCodeReaderView.swift */,
+				4CA33E3020CD2586000E2C34 /* QRCodeReaderResult.swift */,
+				4CA33E3120CD2586000E2C34 /* SwitchCameraButton.swift */,
+				4CA33E3220CD2586000E2C34 /* QRCodeReaderViewController.swift */,
+				4CA33E3320CD2586000E2C34 /* ToggleTorchButton.swift */,
+				4CA33E3420CD2586000E2C34 /* ReaderOverlayView.swift */,
+			);
+			name = libQRCodeReader;
+			path = Carthage/Checkouts/QRCodeReader.swift/libQRCodeReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +174,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA33E3720CD2586000E2C34 /* QRCodeReaderViewContainer.swift in Sources */,
+				4CA33E3820CD2586000E2C34 /* QRCodeReaderViewControllerBuilder.swift in Sources */,
 				4CA33E1B20CD1D53000E2C34 /* ViewController.swift in Sources */,
+				4CA33E3A20CD2586000E2C34 /* QRCodeReaderResult.swift in Sources */,
+				4CA33E3B20CD2586000E2C34 /* SwitchCameraButton.swift in Sources */,
+				4CA33E3520CD2586000E2C34 /* QRCodeReader.swift in Sources */,
+				4CA33E3E20CD2586000E2C34 /* ReaderOverlayView.swift in Sources */,
+				4CA33E3C20CD2586000E2C34 /* QRCodeReaderViewController.swift in Sources */,
+				4CA33E3920CD2586000E2C34 /* QRCodeReaderView.swift in Sources */,
+				4CA33E3620CD2586000E2C34 /* QRCodeReaderViewControllerDelegate.swift in Sources */,
 				4CA33E1920CD1D53000E2C34 /* AppDelegate.swift in Sources */,
+				4CA33E3D20CD2586000E2C34 /* ToggleTorchButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -281,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NWATQPH7P;
 				INFOPLIST_FILE = BlockchainQRScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NWATQPH7P;
 				INFOPLIST_FILE = BlockchainQRScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
