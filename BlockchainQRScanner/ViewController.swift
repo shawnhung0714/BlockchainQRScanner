@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import QRCodeReader
+import PKHUD
 
 class ViewController: UIViewController {
         
@@ -16,9 +18,12 @@ class ViewController: UIViewController {
             $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
         }
         
+        builder.showCancelButton = false
+        
         return QRCodeReaderViewController(builder: builder)
     }()
     
+    var hasShown = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +37,14 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        present(readerVC, animated: true, completion: nil)
+        if !hasShown {
+            let navigationController = UINavigationController(rootViewController: readerVC)
+            readerVC.title = "進階比對"
+            navigationController.navigationBar.barTintColor = UIColor.blue
+            navigationController.navigationBar.titleTextAttributes = [.foregroundColor:UIColor.white]
+            present(navigationController, animated: true, completion: nil)
+            hasShown = true
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

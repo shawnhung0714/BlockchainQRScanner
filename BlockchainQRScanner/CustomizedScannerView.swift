@@ -7,17 +7,15 @@
 //
 
 import UIKit
+import QRCodeReader
 
 class CustomizedScannerView: UIView, QRCodeReaderDisplayable {
-    
-    
     let cameraView: UIView            = UIView()
     let cancelButton: UIButton?       = UIButton()
     let switchCameraButton: UIButton? = SwitchCameraButton()
     let toggleTorchButton: UIButton?  = ToggleTorchButton()
     var overlayView: UIView?          = UIView()
 
-    
     func setNeedsUpdateOrientation() {
     }
     
