@@ -1,2 +1,3 @@
 github "shawnhung0714/QRCodeReader.swift" "01e2a7b4f650ed7ce46679cc069d4705a041f7d1"
 github "pkluz/PKHUD" ~> 4.0
+github "Alamofire/Alamofire" ~> 4.7

@@ -13,21 +13,24 @@
 		4CA33E2020CD1D54000E2C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA33E1F20CD1D54000E2C34 /* Assets.xcassets */; };
 		4CA33E2320CD1D54000E2C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA33E2120CD1D54000E2C34 /* LaunchScreen.storyboard */; };
 		4CA33E4320CD4AAB000E2C34 /* CustomizedScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA33E4220CD4AAB000E2C34 /* CustomizedScannerView.swift */; };
-		4CD4A53520CE68750035E7BD /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A52C20CE684C0035E7BD /* PKHUD.framework */; };
-		4CD4A53620CE68750035E7BD /* PKHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A52C20CE684C0035E7BD /* PKHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4CD4A53720CE68750035E7BD /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A52D20CE684D0035E7BD /* QRCodeReader.framework */; };
-		4CD4A53820CE68750035E7BD /* QRCodeReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A52D20CE684D0035E7BD /* QRCodeReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CD4A53E20CE6A930035E7BD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A53A20CE6A6A0035E7BD /* Alamofire.framework */; };
+		4CD4A53F20CE6A930035E7BD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A53A20CE6A6A0035E7BD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CD4A54020CE6A930035E7BD /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A52C20CE684C0035E7BD /* PKHUD.framework */; };
+		4CD4A54120CE6A930035E7BD /* PKHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A52C20CE684C0035E7BD /* PKHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CD4A54220CE6A930035E7BD /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A52D20CE684D0035E7BD /* QRCodeReader.framework */; };
+		4CD4A54320CE6A930035E7BD /* QRCodeReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4A52D20CE684D0035E7BD /* QRCodeReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4CD4A53920CE68750035E7BD /* Embed Frameworks */ = {
+		4CD4A54420CE6A930035E7BD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4CD4A53620CE68750035E7BD /* PKHUD.framework in Embed Frameworks */,
-				4CD4A53820CE68750035E7BD /* QRCodeReader.framework in Embed Frameworks */,
+				4CD4A53F20CE6A930035E7BD /* Alamofire.framework in Embed Frameworks */,
+				4CD4A54320CE6A930035E7BD /* QRCodeReader.framework in Embed Frameworks */,
+				4CD4A54120CE6A930035E7BD /* PKHUD.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +48,7 @@
 		4CA33E4220CD4AAB000E2C34 /* CustomizedScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedScannerView.swift; sourceTree = "<group>"; };
 		4CD4A52C20CE684C0035E7BD /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
 		4CD4A52D20CE684D0035E7BD /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
+		4CD4A53A20CE6A6A0035E7BD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD4A53520CE68750035E7BD /* PKHUD.framework in Frameworks */,
-				4CD4A53720CE68750035E7BD /* QRCodeReader.framework in Frameworks */,
+				4CD4A53E20CE6A930035E7BD /* Alamofire.framework in Frameworks */,
+				4CD4A54220CE6A930035E7BD /* QRCodeReader.framework in Frameworks */,
+				4CD4A54020CE6A930035E7BD /* PKHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,7 @@
 		4CA33EF820CD5287000E2C34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CD4A53A20CE6A6A0035E7BD /* Alamofire.framework */,
 				4CD4A52C20CE684C0035E7BD /* PKHUD.framework */,
 				4CD4A52D20CE684D0035E7BD /* QRCodeReader.framework */,
 			);
@@ -110,7 +116,7 @@
 				4CA33E1120CD1D53000E2C34 /* Sources */,
 				4CA33E1220CD1D53000E2C34 /* Frameworks */,
 				4CA33E1320CD1D53000E2C34 /* Resources */,
-				4CD4A53920CE68750035E7BD /* Embed Frameworks */,
+				4CD4A54420CE6A930035E7BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

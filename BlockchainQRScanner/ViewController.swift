@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import QRCodeReader
 import PKHUD
+import Alamofire
 
 class ViewController: UIViewController {
         
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
     }()
     
     var hasShown = false
+    
+    var isSending = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,8 +61,25 @@ class ViewController: UIViewController {
 }
 
 extension ViewController : QRCodeReaderViewControllerDelegate {
+    
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
-        HUD.flash(.label(result.value), delay: 2.0)
+        
+        if !isSending {
+            let parameters: Parameters = ["qr": result.value]
+            
+            Alamofire.request("http://140.112.29.201:51502/5bd3bA83/get", method:.post, parameters:parameters).response {response in
+                
+                if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                    HUD.flash(.label("Success \(utf8Text) times!"), delay: 1, completion:{ success in
+                        if success {
+                            self.isSending = false
+                        }
+                    })
+                }
+            }
+            
+            isSending = true
+        }
     }
     
     //This is an optional delegate method, that allows you to be notified when the user switches the cameraName
